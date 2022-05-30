@@ -10,7 +10,9 @@ We present a boundary-aware domain adaptation model for LiDAR scan full-scene se
 [[paper](https://arxiv.org/abs/2003.01174)][[code](https://github.com/unmannedlab/LiDARNet)come soon]
 
 
-### GAN Video
+### 2D GAN Video
 [Youtube Channel](https://www.youtube.com/watch?v=UcHe0xiuvpg&list=RDCMUC34rW-HtPJulxr5wp2Xa04w&index=10)
+
+### 2D GAN Code
 [Keras-GAN Code](https://github.com/eriklindernoren/Keras-GAN)
 [Pytorch-GAN Code](https://github.com/eriklindernoren/PyTorch-GAN)
