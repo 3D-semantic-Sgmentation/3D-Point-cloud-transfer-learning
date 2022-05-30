@@ -8,3 +8,9 @@ Self-supervised learning (SSL) allows to learn useful representations from unlab
 ## LiDARNet: A Boundary-Aware Domain Adaptation Model for Point Cloud Semantic Segmentation
 We present a boundary-aware domain adaptation model for LiDAR scan full-scene semantic segmentation (LiDARNet). Our model can extract both the domain private features and the domain shared features with a two branch structure. We embedded Gated-SCNN into the segmentor component of LiDARNet to learn boundary information while learning to predict full-scene semantic segmentation labels. Moreover, we further reduce the domain gap by inducing the model to learn a mapping between two domains using the domain shared and private features. Besides, we introduce a new dataset (SemanticUSL). The dataset has the same data format and ontology as SemanticKITTI. We conducted experiments on real-world datasets SemanticKITTI, SemanticPOSS, and SemanticUSL, which have differences in channel distributions, reflectivity distributions, diversity of scenes, and sensors setup. Using our approach, we can get a single projection-based LiDAR full-scene semantic segmentation model working on both domains. Our model can keep almost the same performance on the source domain after adaptation and get an 8%-22% mIoU performance increase in the target domain.
 [[paper](https://arxiv.org/abs/2003.01174)][[code](https://github.com/unmannedlab/LiDARNet)come soon]
+
+
+### GAN Video
+[Youtube Channel](https://www.youtube.com/watch?v=UcHe0xiuvpg&list=RDCMUC34rW-HtPJulxr5wp2Xa04w&index=10)
+[Keras-GAN Code](https://github.com/eriklindernoren/Keras-GAN)
+[Pytorch-GAN Code](https://github.com/eriklindernoren/PyTorch-GAN)
