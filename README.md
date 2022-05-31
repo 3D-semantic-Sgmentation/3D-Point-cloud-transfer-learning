@@ -56,6 +56,10 @@ provides a real-to-real transfer of geometric information and delivers additiona
 can improve the segmentation performance substantially with zero manual re-labeling. This approach solves the number one feature request since we released our semantic segmentation library LiDAR-bonnetal
 [[paper](http://www.ipb.uni-bonn.de/pdfs/langer2020iros.pdf)][[code](https://github.com/PRBonn/lidar_transfer)]
 
+## Domain Adaptation in LiDAR Semantic Segmentation by Aligning Class Distributions
+LiDAR semantic segmentation provides 3D semantic information about the environment, an essential cue for intelligent systems, such as autonomous vehicles, during their decision making processes. Unfortunately, the annotation process for this task is very expensive. To overcome this, it is key to find models that generalize well or adapt to additional domains where labeled data is limited. This work addresses the problem of unsupervised domain adaptation for LiDAR semantic segmentation models. We propose simple but effective strategies to reduce the domain shift by aligning the data distribution on the input space. Besides, we present a learningbased module to align the distribution of the semantic classes of the target domain to the source domain. Our approach achieves new state-of-the-art results on three different public datasets, which showcase adaptation to three different domains.
+[[paper](https://arxiv.org/pdf/2010.12239.pdf)]
+
 ### 2D GAN Video
 [[Youtube Channel](https://www.youtube.com/watch?v=UcHe0xiuvpg&list=RDCMUC34rW-HtPJulxr5wp2Xa04w&index=10)]
 
