@@ -31,6 +31,31 @@ Unsupervised Domain Adaptation (UDA) is crucial to tackle the lack of annotation
 [[paper](https://arxiv.org/abs/1911.12676)][[code](https://github.com/valeoai/xmuda)]
 
 
+## CNN-based synthesis of realistic high-resolution LiDAR data
+
+This paper presents a novel CNN-based approach for synthesizing high-resolution LiDAR point cloud data. Our approach generates semantically and perceptually realistic results with guidance from specialized loss-functions. First, we utilize a modified per-point loss that addresses missing LiDAR point measurements. Second, we align the quality of our generated output with real-world sensor data by applying a perceptual loss.
+
+In large-scale experiments on real-world datasets, we evaluate both the geometric accuracy and semantic segmentation performance using our generated data vs. ground truth. In a mean opinion score testing we further assess the perceptual quality of our generated point clouds. Our results demonstrate a significant quantitative and qualitative improvement in both geometry and semantics over traditional non CNN-based up-sampling methods.
+[[paper](https://larissa.triess.eu/pc-upsampling/)][[code](https://github.com/RobustFieldAutonomyLab/lidar_super_resolution)]
+
+## Deep Generative Modeling of LiDAR data (IROS 2019)
+Building models capable of generating structured output is a key challenge for AI and robotics. While generative models have been explored on many types of data, little work has been done on synthesizing lidar scans, which play a key role in robot mapping and localization. In this work, we show that one can adapt deep generative models for this task by unravelling lidar scans into a 2D point map. Our approach can generate high quality samples, while simultaneously learning a meaningful latent representation of the data. We demonstrate significant improvements against state-of-the-art point cloud generation methods. Furthermore, we propose a novel data representation that augments the 2D signal with absolute positional information. We show that this helps robustness to noisy and imputed input; the learned model can recover the underlying lidar scan from seemingly uninformative data
+[[paper](https://arxiv.org/abs/1812.01180)][code](https://github.com/pclucas14/lidar_generation)]
+
+## Learning to Drop Points for LiDAR Scan Synthesis (IROS 2021)
+We propose a noise-aware GAN for generative modeling of 3D LiDAR data on a projected 2D representation (aka spherical projection). Although the 2D representation has been adopted in many LiDAR processing tasks, generative modeling is non-trivial due to the discrete dropout noises caused by LiDAR’s lossy measurement. Our GAN can effectively learn the LiDAR data by representing such discrete data distribution as a composite of two modalities: an underlying complete depth and the corresponding reflective uncertainty.
+[[paper](https://arxiv.org/abs/2102.11952)][[code](https://github.com/kazuto1011/dusty-gan)]
+
+## Paris-Lille-3D: a large and high-quality ground truth urban point cloud dataset for automatic segmentation and classification
+This paper introduces a new Urban Point Cloud Dataset for Automatic Segmentation and Classification acquired by Mobile Laser Scanning (MLS). We describe how the dataset is obtained from acquisition to post-processing and labeling. This dataset can be used to learn classification algorithm, however, given that a great attention has been paid to the split between the different objects, this dataset can also be used to learn the segmentation. The dataset consists of around 2km of MLS point cloud acquired in two cities. The number of points and range of classes make us consider that it can be used to train Deep-Learning methods. Besides we show some results of automatic segmentation and classification. 
+[[paper](https://arxiv.org/abs/1712.00032)][[code](https://github.com/sumo-agarwal/Paris_lille_3D-sparse)]
+
+## Domain Transfer for Semantic Segmentation of LiDAR Data using Deep Neural Networks
+Inferring semantic information towards an understanding of the surrounding environment is crucial for autonomous vehicles to drive safely. Deep learning-based segmentation methods can infer semantic information directly from laser range data, even in the absence of other sensor modalities such as cameras. In this paper, we address improving the generalization capabilities of such deep learning models to range data that was captured using a different sensor and in situations where no labeled data is available for the new sensor setup. Our approach assists the domain transfer of a LiDARonly semantic segmentation model to a different sensor and environment exploiting existing geometric mapping systems. To this end, we fuse sequential scans in the source dataset into a dense mesh and render semi-synthetic scans that match those of the target sensor setup. Unlike simulation, this approach
+provides a real-to-real transfer of geometric information and delivers additionally more accurate remission information. We implemented and thoroughly tested our approach by transferring semantic scans between two different real-world datasets with different sensor setups. Our experiments show that we
+can improve the segmentation performance substantially with zero manual re-labeling. This approach solves the number one feature request since we released our semantic segmentation library LiDAR-bonnetal
+[[paper](http://www.ipb.uni-bonn.de/pdfs/langer2020iros.pdf)][[code](https://github.com/PRBonn/lidar_transfer)]
+
 ### 2D GAN Video
 [[Youtube Channel](https://www.youtube.com/watch?v=UcHe0xiuvpg&list=RDCMUC34rW-HtPJulxr5wp2Xa04w&index=10)]
 
