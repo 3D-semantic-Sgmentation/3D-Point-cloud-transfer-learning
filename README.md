@@ -2,7 +2,10 @@
 This repository collects code, videos related to point cloud transfer learning
 ## Reveiw
 [[A Survey on Deep Domain Adaptation for LiDAR Perception](https://ieeexplore.ieee.org/abstract/document/9669228)]
-
+[[Deep Learning for 3D Point Clouds: A Survey](https://ieeexplore.ieee.org/abstract/document/9127813)]
+[[Deep Learning for LiDAR Point Clouds in Autonomous Driving: A Review](https://ieeexplore.ieee.org/abstract/document/9173706)]
+[[Unsupervised Point Cloud Representation Learning with Deep Neural Networks: A Survey](https://arxiv.org/pdf/2202.13589)]
+[[Deep Learning for LiDAR-Based Autonomous Vehicles in Smart Cities](https://link.springer.com/referenceworkentry/10.1007/978-3-030-69698-6_65)]
 
 ## Popular Methods
 ### Self-Supervised Learning for Domain Adaptation on Point-Clouds
@@ -55,6 +58,9 @@ Point cloud semantic segmentation is a crucial task in 3D scene understanding. E
 Unsupervised Domain Adaptation (UDA) is crucial to tackle the lack of annotations in a new domain. There are many multi-modal datasets, but most UDA approaches are uni-modal. In this work, we explore how to learn from multi-modality and propose cross-modal UDA (xMUDA) where we assume the presence of 2D images and 3D point clouds for 3D semantic segmentation. This is challenging as the two input spaces are heterogeneous and can be impacted differently by domain shift. In xMUDA, modalities learn from each other through mutual mimicking, disentangled from the segmentation objective, to prevent the stronger modality from adopting false predictions from the weaker one. We evaluate on new UDA scenarios including day-to-night, country-to-country and dataset-to-dataset, leveraging recent autonomous driving datasets. xMUDA brings large improvements over uni-modal UDA on all tested scenarios, and is complementary to state-of-the-art UDA techniques.
 [[paper](https://arxiv.org/abs/1911.12676)][[code](https://github.com/valeoai/xmuda)]
 
+### Transfer Learning Based Semantic Segmentation for 3D Object Detection from Point Cloud
+Three-dimensional object detection utilizing LiDAR point cloud data is an indispensable part of autonomous driving perception systems. Point cloud-based 3D object detection has been a better replacement for higher accuracy than cameras during nighttime. However, most LiDAR-based 3D object methods work in a supervised manner, which means their state-of-the-art performance relies heavily on a large-scale and well-labeled dataset, while these annotated datasets could be expensive to obtain and only accessible in the limited scenario. Transfer learning is a promising approach to reduce the large-scale training datasets requirement, but existing transfer learning object detectors are primarily for 2D object detection rather than 3D. In this work, we utilize the 3D point cloud data more effectively by representing the birds-eye-view (BEV) scene and propose a transfer learning based point cloud semantic segmentation for 3D object detection. The proposed model minimizes the need for large-scale training datasets and consequently reduces the training time. First, a preprocessing stage filters the raw point cloud data to a BEV map within a specific field of view. Second, the transfer learning stage uses knowledge from the previously learned classification task (with more data for training) and generalizes the semantic segmentation-based 2D object detection task. Finally, 2D detection results from the BEV image have been back-projected into 3D in the postprocessing stage. We verify results on two datasets: the KITTI 3D object detection dataset and the Ouster LiDAR-64 dataset, thus demonstrating that the proposed method is highly competitive in terms of mean average precision (mAP up to 70%) while still running at more than 30 frames per second (FPS).
+[[paper](https://www.mdpi.com/1424-8220/21/12/3964)]
 
 ### CNN-based synthesis of realistic high-resolution LiDAR data
 This paper presents a novel CNN-based approach for synthesizing high-resolution LiDAR point cloud data. Our approach generates semantically and perceptually realistic results with guidance from specialized loss-functions. First, we utilize a modified per-point loss that addresses missing LiDAR point measurements. Second, we align the quality of our generated output with real-world sensor data by applying a perceptual loss.
